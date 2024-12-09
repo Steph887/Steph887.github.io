@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Feedback</title>
+</head>
+<body>
+        <!-- Header Section -->
+        <header>
+            <h1>Otters: Information and curiosities</h1>
+        </header>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="habitat.html">Habitat</a></li>
+                <li><a href="sounds.html">Sounds</a></li>
+                <li><a href="#diet">Diet</a></li>
+                <li><a href="fun.html">Fun facts</a></li>
+                <li><a href="#form">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <!-- Form Section -->
+    <section id="form">
+        <h2>Share Your Otter Experience</h2>
+        <!-- Feedback Form -->
+        <form action="#" method="post">
+            <!-- Fieldset 1: Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <!-- Text Input -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required maxlength="50" placeholder="Enter your full name">
+
+                <!-- Date Input -->
+                <label for="visit-date">Last Visit to an Otter Sanctuary:</label>
+                <input type="date" id="visit-date" name="visit-date" required>
+            </fieldset>
+
+            <!-- Fieldset 2: Feedback -->
+            <fieldset>
+                <legend>Feedback</legend>
+                <!-- Radio Buttons -->
+                <p>Rate your love for otters:</p>
+                <input type="radio" id="love1" name="love" value="1">
+                <label for="love1">1 - Just okay</label>
+                <input type="radio" id="love10" name="love" value="10">
+                <label for="love10">10 - I adore them!</label>
+
+                <!-- Checkboxes -->
+                <p>What do you like about otters?</p>
+                <input type="checkbox" id="playful" name="likes" value="playful">
+                <label for="playful">That they're playful!</label>
+                <input type="checkbox" id="cute" name="likes" value="cute">
+                <label for="cute">Cuties</label>
+                <input type="checkbox" id="smart" name="likes" value="smart">
+                <label for="smart">Super Smart</label>
+
+                <!-- Range Slider -->
+                <label for="interest">Interest in Otter Facts:</label>
+                <input type="range" id="interest" name="interest" min="0" max="100">
+
+                <!-- Spinner -->
+                <label for="otter-sightings">Number of Otters Spotted:</label>
+                <input type="number" id="otter-sightings" name="otter-sightings" min="0" max="50">
+            </fieldset>
+
+            <!-- Fieldset 3: Additional Comments -->
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <!-- Text Area -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" maxlength="500" placeholder="Write your feedback here..."></textarea>
+
+                <!-- Datalist -->
+                <label for="country">Favorite Otter Country:</label>
+                <input list="countries" id="country" name="country" placeholder="Select or type">
+                <datalist id="countries">
+                    <option value="USA">
+                    <option value="Canada">
+                    <option value="Japan">
+                    <option value="Norway">
+                </datalist>
+            </fieldset>
+
+            <!-- Buttons -->
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </section>
+
+    <script src="js.js">defer</script>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Otter Website. Enjoy! 🦦</p>
+        </footer>
+</body>
+</html>
